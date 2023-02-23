@@ -1,8 +1,24 @@
-# [Interactive Coding Exercise] Printing
+# String Manipulation and Code Intelligence
 
-print("Day 1 - Python Print Function")
-print("The function is declared like this:")
-print("print('what to print')")
+# This will print "Hello World" three times into the console.
+
+print("Hello World")
+print("Hello World")
+print("Hello World")
+
+print("----------------------------------")
+
+# We can use the '\n' to add a new line saving ourselves some typing.
+
+print("Hello World\nI'm Learning to code in Python\nI Love Python Programming")
+
+print("----------------------------------")
+
+# String Concatenation
+# We can concatenate which means add two strings using the '+' sign
+
+print("Hello" + "World") # This will display HelloWorld
+print("Hello " + "World") # This will display Hello World
 
 
 
