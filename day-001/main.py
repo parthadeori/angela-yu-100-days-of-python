@@ -1,24 +1,30 @@
-# Python Variables
+# [Interactive Coding Exercise] Variables
 
-# VARIABLES - Variables are used to store data.
+# Write a program that switches the values stored in the variables 'a' and 'b' 
+# For eg. If a = 3 and b = 5, then the console should print a = 5 and b = 3
 
-name = input("What is your name? ")
-age = input("How old are you? ")
+# Don't change the code below.
+a = input("a: ")
+b = input("b: ")
+# Don't change the code above.
 
-print(name)
-print(age)
+### Write your code below this line. ###
+c = a # Create a new variable 'c' and store the value of 'a'
+a = b # Now, 'a' is empty, so store the value of 'b' inside 'a'
+b = c # Now, 'b' is empty, so store the value of 'c' inside 'b'
 
-print("--------------------")
+# If a = 3 and b = 5
+# c = a ---> c = 3
+# a = b ---> a = 5
+# b = c ---> b = 3
+# Now, a = 5 and b = 3
 
-print("You are " + name + " and you are " + age + " years old.")
+### Write your code above this line. ###
 
-print("--------------------")
-
-# Python executes codes line by line. 
-animal = "Lion" # Here we save name variable with 'Lion'
-animal = "Tiger" # Now, the name variable is changed to 'Tiger'
-
-print(animal)
+# Don't change the code below.
+print("a = " + a)
+print("b = " + b)
+# Don't change the code above.
 
 
 
