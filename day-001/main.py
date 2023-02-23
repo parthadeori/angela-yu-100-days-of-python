@@ -1,22 +1,16 @@
-# Variable Naming
+# Day 1 Project: Band Name Generator
 
-# 1. Make your code readable.
+# 1. Create a greeting for your program
+print("Welcome to the Band Name Generator")
 
-first_name = "John"
-last_name = "Doe"
+# 2. Ask the user for the city that they grew up in.
+city = input("Which city did you grow up in?\n")
 
-my_hobby = "Coding"
+# 3. Ask the user for the name of a pet.
+pet = input("What is the name of your pet?\n")
 
-# 2. Variable names don't have spaces.
-
-# first name = "John"
-
-# 3. We can use numbers in our variables but not in the beginning.
-
-# 1name = "Peter"
-name1 = "Peter"
-
-# 4. Don't use Python's reserved words as variable names.
+# 4. Combine the name of their city and pet and show them their band name.
+print("Your Band Name could be " + city + " " + pet)
 
 
 
