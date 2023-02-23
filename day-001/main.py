@@ -1,24 +1,9 @@
-# String Manipulation and Code Intelligence
+# [Interactive Coding Exercise] Debugging Practice
 
-# This will print "Hello World" three times into the console.
-
-print("Hello World")
-print("Hello World")
-print("Hello World")
-
-print("----------------------------------")
-
-# We can use the '\n' to add a new line saving ourselves some typing.
-
-print("Hello World\nI'm Learning to code in Python\nI Love Python Programming")
-
-print("----------------------------------")
-
-# String Concatenation
-# We can concatenate which means add two strings using the '+' sign
-
-print("Hello" + "World") # This will display HelloWorld
-print("Hello " + "World") # This will display Hello World
+print("Debugging Exercise")
+print("String Concatenation is done with the '+' sign.")
+print('Eg. print("Hello World!")')
+print("New lines can be created with a backslash and n.")
 
 
 
