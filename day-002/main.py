@@ -1,23 +1,22 @@
-# [Interactive Coding Exercise] Life in Weeks
+# Day 2 Project: Tip Calculator
 
-# Create a program using maths and f-Strings that tells us how many days, weeks and months we have
-# left if we live until 90 years old.
+print("Welcome to the tip calculator")
+bill = float(input("What was the total bill? $")) # Eg. bill = $150
 
-# The program will take our current age as the input and output a message with our time left
-# in this format: "You have x days y weeks and z months left",
-# where x, y and z are replaced with the actual calculated numbers.
+tip = int(input("What percentage tip would you like to give? 10, 12 or 15: ")) # Eg. tip = 10
 
-age = int(input("Enter your age: "))
+people = int(input("How many people to split the bill? ")) # Eg. people = 5
 
-years_remaining = 90 - age
+tip_as_percent = tip / 100 # 10/100 = 0.1
+total_tip_amount = bill * tip_as_percent # 150 * 0.1 = 15
+total_bill = bill + total_tip_amount # 150 + 15 = 165
 
-days_remaining = years_remaining * 365 # We take 365 days in a year
-weeks_remaining = years_remaining * 52 # We take 52 weeks in a year
-months_remaining = years_remaining * 12 # 12 months in a year
+bill_per_person = total_bill/people # 165/5 = 33
 
-message = f"You have {days_remaining} days {weeks_remaining} weeks and {months_remaining} months left"
+final_amount = round(bill_per_person, 2) # This will round off to 2 decimal places
+final_amount = "{:.2f}".format(bill_per_person) # This will format bill_per_person to 2 decimal places
 
-print(message)
+print(f"Each person should pay: ${final_amount}")
 
 
 
