@@ -1,30 +1,22 @@
-# [Interactive Coding Exercise] Variables
+# Variable Naming
 
-# Write a program that switches the values stored in the variables 'a' and 'b' 
-# For eg. If a = 3 and b = 5, then the console should print a = 5 and b = 3
+# 1. Make your code readable.
 
-# Don't change the code below.
-a = input("a: ")
-b = input("b: ")
-# Don't change the code above.
+first_name = "John"
+last_name = "Doe"
 
-### Write your code below this line. ###
-c = a # Create a new variable 'c' and store the value of 'a'
-a = b # Now, 'a' is empty, so store the value of 'b' inside 'a'
-b = c # Now, 'b' is empty, so store the value of 'c' inside 'b'
+my_hobby = "Coding"
 
-# If a = 3 and b = 5
-# c = a ---> c = 3
-# a = b ---> a = 5
-# b = c ---> b = 3
-# Now, a = 5 and b = 3
+# 2. Variable names don't have spaces.
 
-### Write your code above this line. ###
+# first name = "John"
 
-# Don't change the code below.
-print("a = " + a)
-print("b = " + b)
-# Don't change the code above.
+# 3. We can use numbers in our variables but not in the beginning.
+
+# 1name = "Peter"
+name1 = "Peter"
+
+# 4. Don't use Python's reserved words as variable names.
 
 
 
