@@ -1,10 +1,24 @@
-# [Interactive Coding Exercise] Input Function
+# Python Variables
 
-# Create a program, which ask for user's name and then printing out the number of characters in the name.
+# VARIABLES - Variables are used to store data.
 
-# Use len() function to find the length of the string including the spaces.
+name = input("What is your name? ")
+age = input("How old are you? ")
 
-print(len(input("What is your name? ")))
+print(name)
+print(age)
+
+print("--------------------")
+
+print("You are " + name + " and you are " + age + " years old.")
+
+print("--------------------")
+
+# Python executes codes line by line. 
+animal = "Lion" # Here we save name variable with 'Lion'
+animal = "Tiger" # Now, the name variable is changed to 'Tiger'
+
+print(animal)
 
 
 
