@@ -1,9 +1,10 @@
-# [Interactive Coding Exercise] Debugging Practice
+# The Python Input Function
 
-print("Debugging Exercise")
-print("String Concatenation is done with the '+' sign.")
-print('Eg. print("Hello World!")')
-print("New lines can be created with a backslash and n.")
+# INPUT Function - Allows us to input something
+# Use input() to ask the user something into the console.
+
+input("What is your name? ")
+input("Where are you from? ")
 
 
 
