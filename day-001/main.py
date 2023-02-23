@@ -1,10 +1,10 @@
-# The Python Input Function
+# [Interactive Coding Exercise] Input Function
 
-# INPUT Function - Allows us to input something
-# Use input() to ask the user something into the console.
+# Create a program, which ask for user's name and then printing out the number of characters in the name.
 
-input("What is your name? ")
-input("Where are you from? ")
+# Use len() function to find the length of the string including the spaces.
+
+print(len(input("What is your name? ")))
 
 
 
