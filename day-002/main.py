@@ -1,48 +1,65 @@
-# Python Primitive Data Types
+# Type Error, Type Checking and Type Conversion
 
-# 1. Strings - String is a piece of characters inside single quotes or double quotes.
-# Eg. "Hello World", "There are 5 apples", "Give me a $5 bill.", "1234".
+# len() function doesn't work with integers.
+# print(len(123)) # This will give an error of TypeError
 
-print("Hello " + "World") # This will print Hello World
-print("123" + "456") # This will print 123456
+print(len("123")) 
+# This will print 3 because it has 3 characters 
+# but the position of characters will start from 0.
 
-print('---------------------')
+print('--------------------')
 
-# To find the position of a character of a string from left to right, we do it like this:
-print("Hello"[0])
-# This will print H inside the console, because in programming, we start counting from 0
-print("Hello"[1]) # This will print e inside the console.
+# Data Type Checking
+# We can check type of data by using the type() function
 
-print('---------------------')
-
-# 2. Integers - This is a number data type. Integers don't required quotes.
-# Eg.
-print(123) # This will print 123
-print(123 + 456) # This will print 579
+print(type(123)) # This will print <class 'int'> which means integer
+print(type("Hello123")) # This will print <class 'str'> which means string
+print(type(23.8)) # This will print <class 'float'> which means float
+print(type(True)) # This will print <class 'bool'> which means boolean
 
 print('---------------------')
 
-# We can separate large integers using '_" (underscore) just like we separate large numbers using commas.
-# Eg. 123,456, as 123_456_789
-print(123_456_789)
+# Data Types Conversion
+# We cannot concatenate string and integers. To concatenate string with integers,
+# We have to convert either one of them. 
+# To convert integer to string, we can use the str() function
+a = 123
+print(type(a)) # This will print <class 'int'>
+a = str(123)
+print(type(a)) # This will print <class 'str'>
 
 print('---------------------')
 
-# 3. Float - Numbers with decimal point.
-# Eg. 23.98, 4.567
 
-print(23.09 + 12.89) # This will print 35.980000000000004
+# To convert string to integer, we can use the int() function
+b = "456"
+print(type(b)) # This will print <class 'str'>
+b = int("456")
+print(type(b)) # This will print <class 'int'>
+
+print('---------------------')
+
+# Let's use str() and int() function to concatenate string and integers.
+
+num_char = len(input("What is your name? ")) 
+# This will print the number of characters of the user's name
+# This is of class int
+
+num_char_str = str(num_char) 
+# We converted the class int to class str by using str() function
+# Now, num_char_str holds the value as str
+
+print("Your name has " + num_char_str + " characters")
+# We have concatenate strings and integers by converting integers to strings.
+# Enter your name in the console to check the result.
+
+# The below code will give an error.
+# num_char = len(input("What is your name? "))
+# print("Your name has " + num_char + " characters.")
 
 print('---------------------')
 
-# 4. Boolean - Logical data types. True or False should begin with capital T and F.
-
-print(2 > 3) # This will print False
-print(5 < 10) # This will print True
-print(True) # This will print True
-print(False) # This will print False
-
-print('---------------------')
+# We can convert string like "123" or integers to float by using float() function
 
 
 
