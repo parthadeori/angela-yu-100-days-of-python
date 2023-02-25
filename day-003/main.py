@@ -1,40 +1,31 @@
-# Nested if statements and elif statements
+# [Interactive Coding Exercise] BMI 2.0
 
-# This if/else statement is inside the 'if' statement block.
-# If a condition is True, Python will check for the if/else statement inside the 'if' block of code.
-print("Welcome to the rollercoaster!")
-height = int(input("What is your height in cm? "))
+# Write a program that interprets the Body Mass Index (BMI) based on a user's weight and height. 
+# It should tell them the interpretation of their BMI based on the BMI value. 
 
-if(height >= 120):
-    print("You can ride the rollercoaster!")
-    age = int(input("What is your age? "))
-    if(age <= 18): # Nested if/else statement start from here in this case.
-        print("Please pay $7.")
-    else:
-        print("Please pay $12.")
+# 1. Under 18.5 they are 'underweight' 
+# 2. Over 18.5 but below 25 they have a 'normal weight' 
+# 3. Over 25 but below 30 they are 'overweight' 
+# 4. Over 30 but below 35 they are 'obese' 
+# 5. Above 35 they are 'clicnically obese'
+
+# Round the result to it's nearest whole number.
+
+height = float(input("Enter your height in m: "))
+weight = float(input("Enter your weight in kg: "))
+
+BMI = round(weight/(height**2), 2)
+
+if(BMI < 18.5):
+    print(f"Your BMI is {BMI}. You are underweight.")
+elif(BMI < 25):
+    print(f"Your BMI is {BMI}. You have a normal weight.")
+elif(BMI < 30):
+    print(f"Your BMI is {BMI}. You are overweight.")
+elif(BMI < 35):
+    print(f"Your BMI is {BMI}. You are obese.")
 else:
-    print("Sorry you have to grow taller before you can ride.")
-
-# elif Statement - If we have multiple 'if' statements, then we use the 'elif' statements.
-
-#'elif' statements required condition to be passed on.
-# We can add many 'elif' statements we want.
-# In this case, we are using 'elif' statement nested inside the 'if' statement.
-
-print("Welcome to the rollercoaster!")
-height = int(input("What is your height in cm? "))
-
-if(height >= 120): # If this condition is True, this 'if' block code will execute.
-    print("You can ride the rollercoaster!")
-    age = int(input("What is your age? "))
-    if(age < 12): # If 'age' is less than 12, this code block will execute.
-        print("People under 12 years should pay $5")
-    elif(age <= 18): # If 'age' is lesser or equal to 18, then this code will execute. 
-        print("People under 12-18 years should pay $7.")
-    else: # If 'age' is 19 or more, then this code will execute
-        print("People over 18 years should pay $12.")
-else:
-    print("Sorry you have to grow taller before you can ride.")
+    print(f"Your BMI is {BMI}. You are clinically obese.")
 
 
 
