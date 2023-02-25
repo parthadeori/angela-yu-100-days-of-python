@@ -1,40 +1,20 @@
-# [Interactive Coding Exercise] Pizza Order Practice
+# Logical Operators
 
-# Congratulations, you've got a job at Python Pizza. Your first job is to build an 
-# automatic pizza order program. Based on a user's order, work out their final bill.
+# Allow us to check multiple conditions on the same line of code.
+# There are three Logical Operators: and, or, not
 
-# Small Pizza: $15
-# Medium Pizza: $20
-# Large Pizza: $25
-# Pepperoni for Small Pizza: +$2
-# Pepperoni for Medium or Large Pizza: +$3
-# Extra cheese for any size pizza: + $1
+# 'and' - Returns True if both statements are true
+a = 12
+print(a > 15 and a > 10) # This will print False
+print(a > 10 and a < 15) # This will print True
 
-# Write your code below this line
+# 'or' - Returns True if one of the statements is true
+print(a > 15 or a > 10) # This will print True
+print(a > 15 or a > 17) # This will print False
 
-print("Welcome to The Python Pizza")
-bill = 0
-size = input("What size of pizza do you want? S, M or L: ")
-pepperoni = input("Do you want extra pepperoni? Y or N: ")
-cheese = input("Do you want extra cheese? Y or N: ")
-
-if(size == "S"):
-    bill += 15
-elif(size == "M"):
-    bill += 20
-else:
-    bill += 25
-
-if(pepperoni == "Y"):
-    if(size == "S"):
-        bill += 2
-    else:
-        bill += 3
-
-if(cheese == "Y"):
-    bill += 1
-
-print(f"Your final bill is ${bill}")
+# 'not' - Reverse the result, returns False if the result is true
+print(not(a > 16)) # This will print True
+print(not(a > 15 or a < 20)) # This will print False
 
 
 
