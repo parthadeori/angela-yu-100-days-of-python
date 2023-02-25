@@ -1,33 +1,40 @@
-# Multiple If Statements in Succession
+# [Interactive Coding Exercise] Pizza Order Practice
 
-# Now we are going to add another if statement for which we
-# ask the user, if they want to take photos while in the rollercoaster.
+# Congratulations, you've got a job at Python Pizza. Your first job is to build an 
+# automatic pizza order program. Based on a user's order, work out their final bill.
 
-print("Welcome to the rollercoaster!")
-height = int(input("What is your height in cm? "))
-bill = 0 # This 'bill' variable is created so that it calculates the final amount at the end
+# Small Pizza: $15
+# Medium Pizza: $20
+# Large Pizza: $25
+# Pepperoni for Small Pizza: +$2
+# Pepperoni for Medium or Large Pizza: +$3
+# Extra cheese for any size pizza: + $1
 
-if(height >= 120):
-    print("You can ride the rollercoaster!")
-    age = int(input("What is your age? "))
-    if(age < 12):
-        bill = 5
-        print("Child tickets are $5")
-    elif(age <= 18):
-        bill = 7
-        print("Youth tickets are $7.")
-    else:
-        bill = 12
-        print("Adult tickets are $12.")
+# Write your code below this line
 
-    wants_photo = input("Do you wanna photo taken? Y or N: ") # here we have created another variable
-    if(wants_photo == "Y"): # This is another 'if' statement for another condition
-        bill += 3 # bill = bill + 3
-    
-    print(f"Your final bill is ${bill}")
+print("Welcome to The Python Pizza")
+bill = 0
+size = input("What size of pizza do you want? S, M or L: ")
+pepperoni = input("Do you want extra pepperoni? Y or N: ")
+cheese = input("Do you want extra cheese? Y or N: ")
 
+if(size == "S"):
+    bill += 15
+elif(size == "M"):
+    bill += 20
 else:
-    print("Sorry you have to grow taller before you can ride.")
+    bill += 25
+
+if(pepperoni == "Y"):
+    if(size == "S"):
+        bill += 2
+    else:
+        bill += 3
+
+if(cheese == "Y"):
+    bill += 1
+
+print(f"Your final bill is ${bill}")
 
 
 
