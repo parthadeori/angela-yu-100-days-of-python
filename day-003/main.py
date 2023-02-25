@@ -1,31 +1,40 @@
-# [Interactive Coding Exercise] BMI 2.0
+# [Interactive Coding Exercise] Leap Year
 
-# Write a program that interprets the Body Mass Index (BMI) based on a user's weight and height. 
-# It should tell them the interpretation of their BMI based on the BMI value. 
+# Write a program that works out whether if a given year is a leap year. 
 
-# 1. Under 18.5 they are 'underweight' 
-# 2. Over 18.5 but below 25 they have a 'normal weight' 
-# 3. Over 25 but below 30 they are 'overweight' 
-# 4. Over 30 but below 35 they are 'obese' 
-# 5. Above 35 they are 'clicnically obese'
+year = int(input("Enter a year: "))
 
-# Round the result to it's nearest whole number.
+# EXPLANATORY VERSION - Comment the simple version to try this.
 
-height = float(input("Enter your height in m: "))
-weight = float(input("Enter your weight in kg: "))
-
-BMI = round(weight/(height**2), 2)
-
-if(BMI < 18.5):
-    print(f"Your BMI is {BMI}. You are underweight.")
-elif(BMI < 25):
-    print(f"Your BMI is {BMI}. You have a normal weight.")
-elif(BMI < 30):
-    print(f"Your BMI is {BMI}. You are overweight.")
-elif(BMI < 35):
-    print(f"Your BMI is {BMI}. You are obese.")
+if(year % 4 == 0):
+    print(f"{year} is clearly divisible by 4. (Leap year). Checking second condition...")
+    if(year % 100 == 0):
+        print(f"{year} is not divisible by 100 clearly. (Not a leap year). Checking final condition...")
+        if(year % 400 == 0):
+            print(f"{year} is finally divided by 400 clearly. (Leap year).")
+            print(f"So, {year} is a Leap year.")
+        else:
+            print(f"{year} is not divisible by 400. (Not a leap year).")
+            print(f"Hence, {year} is not a leap year")
+    else:
+        print(f"The second condition is omitted since {year} is not divisible by 100 clearly.")
+        print(f"Hence, {year} is a Leap year.")
 else:
-    print(f"Your BMI is {BMI}. You are clinically obese.")
+    print(f"{year} is not divisible by 4. So, {year} is Not a leap year.")
+
+
+## SIMPLE VERSION WITHOUT EXPLANATION - Comment the explanatory version to try this.
+
+# if(year % 4 == 0):
+#     if(year % 100 == 0):
+#         if(year % 400 == 0):
+#             print("Leap year")
+#         else:
+#             print("Not a leap year")
+#     else:
+#         print("Leap year")
+# else:
+#     print("Not a leap year.")
 
 
 
