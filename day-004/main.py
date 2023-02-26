@@ -1,29 +1,18 @@
-# Understanding the Offset and Appending Items to Lists
+# [Interactive Coding Exercise] Banker Roulette - Who will pay the bill?
 
-fruits = ["apple", "cherry", "pear", "banana", "orange"]
-print(fruits)
+# You are going to write a program which will select a random 
+# name from a list of names. The person selected will have to 
+# pay for everybody's food bill. Use the random module.
 
-print(fruits[0]) # This will return 'apple'
-print(fruits[1]) # This will return 'cherry'
-print(fruits[2]) # This will return 'pear'
+import random
 
-print(fruits[-1]) # This will return the last item from the list, i.e., 'orange'
-print(fruits[-2]) # This will return 'banana'
+name_string = input("Give me everybody's names, separated by a comma. ")
+names = name_string.split(", ")
 
-print(len(fruits)) # This will return 5
-
-# We can replace an item in the list by specifying its position
-fruits[2] = "pineapple" # Pear is replaced with Pineapple
-print(fruits)
-
-# We can add a new item to our list by using .append() function
-fruits.append("dragonfruit")
-print(fruits)
-
-# We can add a new list inside our fruits list by using .extend() function
-fruits.extend(["mango", "strawberry", "plum"])
-print(fruits)
-
+num_items = len(names)
+random_choice = random.randint(0, num_items - 1)
+person_who_will_pay = names[random_choice]
+print(person_who_will_pay + " is going to buy the meal today.")
 
 
 # Connect with me on:
