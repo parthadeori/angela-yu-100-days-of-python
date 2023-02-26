@@ -1,18 +1,28 @@
-# [Interactive Coding Exercise] Heads or Tails
+# Understanding the Offset and Appending Items to Lists
 
-# You are going to write a virtual coin toss program. 
-# It will randomly tell the user "Heads" or "Tails."
+fruits = ["apple", "cherry", "pear", "banana", "orange"]
+print(fruits)
 
-# Write your code below this line:
+print(fruits[0]) # This will return 'apple'
+print(fruits[1]) # This will return 'cherry'
+print(fruits[2]) # This will return 'pear'
 
-import random
+print(fruits[-1]) # This will return the last item from the list, i.e., 'orange'
+print(fruits[-2]) # This will return 'banana'
 
-random_side = random.randint(0, 1)
+print(len(fruits)) # This will return 5
 
-if(random_side == 1):
-    print("Heads")
-else:
-    print("Tails")
+# We can replace an item in the list by specifying its position
+fruits[2] = "pineapple" # Pear is replaced with Pineapple
+print(fruits)
+
+# We can add a new item to our list by using .append() function
+fruits.append("dragonfruit")
+print(fruits)
+
+# We can add a new list inside our fruits list by using .extend() function
+fruits.extend(["mango", "strawberry", "plum"])
+print(fruits)
 
 
 
