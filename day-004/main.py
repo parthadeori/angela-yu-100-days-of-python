@@ -1,18 +1,16 @@
-# [Interactive Coding Exercise] Banker Roulette - Who will pay the bill?
+# IndexErrors and Working with Nested Lists
 
-# You are going to write a program which will select a random 
-# name from a list of names. The person selected will have to 
-# pay for everybody's food bill. Use the random module.
+fruits_and_vegetables = ["apple", "potato", "onion", "strawberry", "orange", "kale", "okra", "plum", "cabbage", "spinach"]
 
-import random
+# Separating fruits and vegetables manually 
 
-name_string = input("Give me everybody's names, separated by a comma. ")
-names = name_string.split(", ")
+fruits = ["apple", "strawberry", "orange", "plum"]
+vegetables = ["potato", "onion", "kale", "okra", "cabbage", "spinach"]
 
-num_items = len(names)
-random_choice = random.randint(0, num_items - 1)
-person_who_will_pay = names[random_choice]
-print(person_who_will_pay + " is going to buy the meal today.")
+# Nesting fruits and vegetables list within the fruits_and_vegetables list
+
+nested_list = [fruits, vegetables]
+print(nested_list)
 
 
 # Connect with me on:
