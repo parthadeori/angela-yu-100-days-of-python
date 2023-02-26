@@ -1,16 +1,13 @@
-# Does Python Have Block Scope?
+# How to Modify a Global Variable
 
-# There is no Block Scope in Python
+enemies = 1
 
-game_level = 3
-enemies = ["Skeleton", "Zombie", "Alien"]
-if game_level < 5:
-    new_enemy = enemies[0]
+def increase_enemies():
+    print(f"enemies inside function: {enemies}")
+    return enemies + 1
 
-print(new_enemy)
-
-################### Scope ###################
-
+enemies = increase_enemies()
+print(f"enemies outside function: {enemies}")
 
 
 
