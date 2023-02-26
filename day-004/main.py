@@ -1,53 +1,35 @@
-# [Interactive Coding Exercise] Treasure Map
+# Day 4 Project: Rock, Paper, Scissors
 
-# You are going to write a program which will mark a spot with an X. The map is made of 3 rows of blank squares,
+import random
 
-#      1     2    3
-# 1 ['⬜','⬜','⬜']
-# 2 ['⬜','⬜','⬜']
-# 3 ['⬜','⬜','⬜']
+game_data = ["✊ (rock)", "🖐️ (paper)", "✌️ (scissors)"]
 
-# Your program should allow you to enter the position of the treasure using a two-digit system. 
-# The first digit is the horizontal 'column' number and the second digit is the vertical 'row' number. 
+print("Welcome to Rock, Paper, Scissors")
+user_choice = input("What do you want to choose? Type 0 for ✊, 1 for 🖐️  and 2 for ✌️.\n")
 
-# Example Output 1: column 2, row 3 would be entered as: 23
-# ['⬜','⬜','⬜']
-# ['⬜','⬜','⬜']
-# ['⬜','X','⬜']
-# 
-# Example Input 2: column 3, row 1 would be entered as: 31 
-# Example Output 2:
-# ['⬜','⬜','X']
-# ['⬜','⬜','⬜']
-# ['⬜','⬜','⬜']
+if(int(user_choice) != 0 and int(user_choice) != 1 and int(user_choice) != 2):
+    print("Invalid input.")  
+else:
+    print(f"You chose: {game_data[int(user_choice)]}")
 
+    computer_choice = random.randint(0, 2)
+    print(f"Computer chose: {game_data[computer_choice]}")
 
-# SOLUTION
-row1 = ['⬜', '⬜', '⬜'] # First list    [11, 21, 31]
-row2 = ['⬜', '⬜', '⬜'] # Second list   [12, 22, 32]
-row3 = ['⬜', '⬜', '⬜'] # Third list    [13, 23, 33]
+    if(int(user_choice) == computer_choice):
+        print("It's a draw.")
+    elif(int(user_choice) == 0 and computer_choice == 1):
+        print("You lose.")
+    elif(int(user_choice) == 0 and computer_choice == 2):
+        print("You win.")
+    elif(int(user_choice) == 1 and computer_choice == 0):
+        print("You win.")
+    elif(int(user_choice) == 1 and computer_choice == 2):
+        print("You lose.")
+    elif(int(user_choice) == 2 and computer_choice == 0):
+        print("You lose.")
+    elif(int(user_choice) == 2 and computer_choice == 1):
+        print("You win.")
 
-map = [row1, row2, row3] # Lists inside list
-
-print(f"{row1}\n{row2}\n{row3}")
-print('''
-[11, 21, 31] 
-[12, 22, 32]
-[13, 23, 33]
-''')
-
-position = input("Where do you want to put 'X'? Enter any number from the list ") # '23'
-
-horizontal = int(position[0]) # 2
-vertical = int(position[1]) # 3
-
-selected_row = map[vertical - 1] # map[3 - 1] = map[2] = row3
-selected_row[horizontal - 1] = "X" # row3[2 - 1] = row3[1] = 23
-# This will replaced that position's block with an 'X'
-
-# map[vertical - 1][horizontal - 1] = "X"  # Short version
-
-print(f"{row1}\n{row2}\n{row3}")
 
 
 # Connect with me on:
