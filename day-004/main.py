@@ -1,22 +1,18 @@
-# Random Module
+# [Interactive Coding Exercise] Heads or Tails
 
-# To use the Random module, first we have to import the Random module.
+# You are going to write a virtual coin toss program. 
+# It will randomly tell the user "Heads" or "Tails."
+
+# Write your code below this line:
 
 import random
 
-# randint(a, b) - Returns a random integer between a and b (both inclusive)
+random_side = random.randint(0, 1)
 
-random_integer = random.randint(1, 10) # This will generate a random integer from 1 and 10
-print(random_integer)
-
-# random.random() - Return a random floating number between [0.0 - 1.0) not including 1.0
-
-random_float = random.random()
-print(random_float)
-
-# Create a random floating number between 1 and 5
-randomFloat = random.random() * 5
-print(randomFloat) # This will generate a random float number between 0.000000 to 4.999999
+if(random_side == 1):
+    print("Heads")
+else:
+    print("Tails")
 
 
 
