@@ -1,13 +1,10 @@
-# How to Modify a Global Variable
+# Python Constants and Global Scope
 
-enemies = 1
+PI = 3.14159
+URL = "https://www.google.com"
 
-def increase_enemies():
-    print(f"enemies inside function: {enemies}")
-    return enemies + 1
-
-enemies = increase_enemies()
-print(f"enemies outside function: {enemies}")
+def calc():
+    PI
 
 
 
