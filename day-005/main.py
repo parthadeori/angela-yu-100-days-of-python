@@ -1,11 +1,10 @@
-# for loops and the range() function
+# [Interactive Coding Exercise] Adding Even Numbers
 
-for number in range(1, 10, 3):
-    print(number)
+# Write a program that calculates the sum of all the even numbers from 1 to 100.
 
 total = 0
-for number in range(1, 101):
-    total += number
+for number in range(2, 101, 2):
+    total = total + number
 print(total)
 
 
