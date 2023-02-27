@@ -1,13 +1,12 @@
-# Play Computer and Evaluate Each Line
+# Play Computer and Evaluate Each Line - Solution
 
-# There is bug. When we execute the following code and input 1994,
-# it doesn't print anything on the console.
-# Please find the bug and debug it.
+# We just have to add an '=' either on year < 1994 or year > 1994.
+# This will fix the code.
 
 year = int(input("What's your year of birth?"))
 if year > 1980 and year < 1994:
   print("You are a millenial.")
-elif year > 1994:
+elif year >= 1994:
   print("You are a Gen Z.")
 
 
