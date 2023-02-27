@@ -1,12 +1,11 @@
-# Reproduce the Bug
+# Reproduce the Bug - Solution
 
-# In this debugging problem, when we execute the following code,
-# sometimes it works fine but occassionally it gives an error.
-# Please fix the code.
+# Instead of random number between 1 to 6, we changed the randint
+# function from 0 to 5.
 
 from random import randint
 dice_imgs = ["❶", "❷", "❸", "❹", "❺", "❻"]
-dice_num = randint(1, 6)
+dice_num = randint(0, 5)
 print(dice_imgs[dice_num])
 
 
