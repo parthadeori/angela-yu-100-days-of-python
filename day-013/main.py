@@ -1,10 +1,14 @@
-# Fixing Errors and Watching for Red Underlines - Solution
+# Squash bugs with a print() Statement
 
-# Please fix the following code.
+# The following code print the total words in a book.
+# But something seems to be wrong. Please fix the code.
 
-age = int(input("How old are you? "))
-if age > 18:
-    print(f"You can drive at age {age}.")
+pages = 0
+word_per_page = 0
+pages = int(input("Number of pages: "))
+word_per_page == int(input("Number of words per page: "))
+total_words = pages * word_per_page
+print(total_words)
 
 
 
