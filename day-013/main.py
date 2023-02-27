@@ -1,12 +1,11 @@
-# Squash bugs with a print() Statement
+# Squash bugs with a print() Statement - Solution
 
-# The following code print the total words in a book.
-# But something seems to be wrong. Please fix the code.
+# We have fixed the code.
 
 pages = 0
 word_per_page = 0
 pages = int(input("Number of pages: "))
-word_per_page == int(input("Number of words per page: "))
+word_per_page = int(input("Number of words per page: "))
 total_words = pages * word_per_page
 print(total_words)
 
