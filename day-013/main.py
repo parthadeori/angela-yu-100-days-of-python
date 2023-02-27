@@ -1,7 +1,7 @@
 # Play Computer and Evaluate Each Line
 
 # There is bug. When we execute the following code and input 1994,
-# it doesn't print "You are a Gen Z." on the console.
+# it doesn't print anything on the console.
 # Please find the bug and debug it.
 
 year = int(input("What's your year of birth?"))
