@@ -1,13 +1,10 @@
-# Play Computer and Evaluate Each Line - Solution
+# Fixing Errors and Watching for Red Underlines
 
-# We just have to add an '=' either on year < 1994 or year > 1994.
-# This will fix the code.
+# Please fix the following code.
 
-year = int(input("What's your year of birth?"))
-if year > 1980 and year < 1994:
-  print("You are a millenial.")
-elif year >= 1994:
-  print("You are a Gen Z.")
+age = input("How old are you?")
+if age > 18:
+print("You can drive at age {age}.")
 
 
 
