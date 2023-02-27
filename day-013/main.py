@@ -1,13 +1,13 @@
-# Bringing out the BIG Gun: Using a Debugger
+# Bringing out the BIG Gun: Using a Debugger - Solution
 
-# Fix the code, so that it prints out the following:
+# Fixed the code by indenting line 10, with the for loop.
 # [2, 4, 6, 10, 16, 26]
 
 def mutate(a_list):
   b_list = []
   for item in a_list:
     new_item = item * 2
-  b_list.append(new_item)
+    b_list.append(new_item)
   print(b_list)
 
 mutate([1,2,3,5,8,13])
