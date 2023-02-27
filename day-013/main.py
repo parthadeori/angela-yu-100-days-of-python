@@ -1,12 +1,10 @@
-# Describe the Problem
+# Describe the Problem - Solution
 
-# The problem in the following code is that, when calling my_function(), "You got it"
-# should print in the console. But nothing is printed on the console while executing 
-# the code. Try to debug the code and see if "You got it" gets printed in the console,
-# by just changing a value.
+# We just have to change the range from 1 to 21, in order to let the function
+# print "You got it" in the console.
 
 def my_function():
-  for i in range(1, 20):
+  for i in range(1, 21):
     if i == 20:
       print("You got it")
 my_function()
