@@ -1,13 +1,13 @@
-# Describe the Problem - Solution
+# Reproduce the Bug
 
-# We just have to change the range from 1 to 21, in order to let the function
-# print "You got it" in the console.
+# In this debugging problem, when we execute the following code,
+# sometimes it works fine but occassionally it gives an error.
+# Please fix the code.
 
-def my_function():
-  for i in range(1, 21):
-    if i == 20:
-      print("You got it")
-my_function()
+from random import randint
+dice_imgs = ["❶", "❷", "❸", "❹", "❺", "❻"]
+dice_num = randint(1, 6)
+print(dice_imgs[dice_num])
 
 
 
