@@ -1,12 +1,14 @@
-# Reproduce the Bug - Solution
+# Play Computer and Evaluate Each Line
 
-# Instead of random number between 1 to 6, we changed the randint
-# function from 0 to 5.
+# There is bug. When we execute the following code and input 1994,
+# it doesn't print "You are a Gen Z." on the console.
+# Please find the bug and debug it.
 
-from random import randint
-dice_imgs = ["❶", "❷", "❸", "❹", "❺", "❻"]
-dice_num = randint(0, 5)
-print(dice_imgs[dice_num])
+year = int(input("What's your year of birth?"))
+if year > 1980 and year < 1994:
+  print("You are a millenial.")
+elif year > 1994:
+  print("You are a Gen Z.")
 
 
 
