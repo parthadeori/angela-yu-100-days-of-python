@@ -1,16 +1,13 @@
-# Bringing out the BIG Gun: Using a Debugger - Solution
+# [Interactive Coding Exercise] Debugging Odd or Even
 
-# Fixed the code by indenting line 10, with the for loop.
-# [2, 4, 6, 10, 16, 26]
+# Modify the code to fix the problem.
 
-def mutate(a_list):
-  b_list = []
-  for item in a_list:
-    new_item = item * 2
-    b_list.append(new_item)
-  print(b_list)
+number = int(input("Which number do you want to check? "))
 
-mutate([1,2,3,5,8,13])
+if number % 2 = 0:
+  print("This is an even number.")
+else:
+  print("This is an odd number.")
 
 
 
