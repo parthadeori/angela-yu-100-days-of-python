@@ -1,13 +1,19 @@
-# [Interactive Coding Exercise] Debugging Odd or Even - Solution
+# [Interactive Coding Exercise] Debugging Leap Year
 
-# Modify the code to fix the problem.
+# Modify the code to fix the program
 
-number = int(input("Which number do you want to check? "))
+year = input("Which year do you  want to check? ")
 
-if number % 2 == 0:
-  print("This is an even number.")
+if year % 4 == 0:
+  if year % 100 == 0:
+    if year % 400 == 0:
+      print("Leap year.")
+    else:
+      print("Not leap year.")
+  else:
+    print("Leap year.")
 else:
-  print("This is an odd number.")
+  print("Not leap year.")  
 
 
 
