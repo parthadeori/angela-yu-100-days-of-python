@@ -1,19 +1,16 @@
-# [Interactive Coding Exercise] Debugging Leap Year - Solution
+# [Interactive Coding Exercise] Debugging FizzBuzz
 
 # Modify the code to fix the program
 
-year = int(input("Which year do you  want to check? "))
-
-if year % 4 == 0:
-  if year % 100 == 0:
-    if year % 400 == 0:
-      print("Leap year.")
-    else:
-      print("Not leap year.")
+for number in range(1, 101):
+  if number % 3 == 0 or number % 5 == 0:
+    print("FizzBuzz")
+  if number % 3 == 0:
+    print("Fizz")
+  if number % 5 == 0:
+    print("Buzz")
   else:
-    print("Leap year.")
-else:
-  print("Not leap year.")  
+    print([number])
 
 
 
