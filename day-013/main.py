@@ -1,8 +1,8 @@
-# [Interactive Coding Exercise] Debugging Leap Year
+# [Interactive Coding Exercise] Debugging Leap Year - Solution
 
 # Modify the code to fix the program
 
-year = input("Which year do you  want to check? ")
+year = int(input("Which year do you  want to check? "))
 
 if year % 4 == 0:
   if year % 100 == 0:
