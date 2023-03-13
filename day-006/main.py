@@ -1,6 +1,26 @@
-def my_function():
-    print("Hello")
-    print("Bye")
+def turn_left():
+    pass
 
-# Calling a function
-my_function()
+def move():
+    pass
+
+def turn_around():
+    turn_left()
+    turn_left()
+    
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+    
+turn_left()
+move()
+turn_left()
+turn_around()
+move()
+turn_left()
+turn_around()
+move()
+turn_left()
+turn_around()
+move()
